@@ -1,5 +1,5 @@
 .nav{
-    width: 100%;
+    width: 100vw;
     height: 90%;
     background-image: url('../assets/landimg.png');
     background-repeat: no-repeat;
@@ -25,7 +25,18 @@
     text-align: center;
 }
 
+@media (max-width: 650px){
+    .nav{
+        height: 70%;
+    }
+}
+
 @media (max-width: 420px){
+
+    .nav{
+        height: 50%;
+    }
+
     .cntr{
         height: 65%;
     }
