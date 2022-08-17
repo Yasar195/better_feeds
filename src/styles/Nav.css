@@ -34,7 +34,8 @@
 @media (max-width: 420px){
 
     .nav{
-        height: 50%;
+        height: 70%;
+        background-image: url('../assets/landimgsm.png');
     }
 
     .cntr{
