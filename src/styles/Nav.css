@@ -27,14 +27,14 @@
 
 @media (max-width: 650px){
     .nav{
-        height: 70%;
+        height: 80%;
     }
 }
 
 @media (max-width: 420px){
 
     .nav{
-        height: 70%;
+        height: 80%;
         background-image: url('../assets/landimgsm.png');
     }
 
