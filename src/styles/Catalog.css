@@ -1,0 +1,51 @@
+.cat{
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E1E;
+    padding: 0.4rem;
+    color: white;
+    display: flex;
+    border-radius: 15px;
+}
+
+.images{
+    width: 80%;
+    height: 100%;
+}
+
+.images img{
+    width: 4rem;
+}
+
+.cat div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.4rem;
+}
+
+.view{
+    width: 20%;
+}
+
+.view h1{
+    font-size: 0.6rem;
+}
+
+@media (max-width:450px){
+    .cat{
+        flex-direction: column;
+    }
+
+    .view{
+        width: 100%;
+    }
+
+    .images{
+        width: 100%;
+    }
+
+    .cat div{
+        flex-direction: column;
+    }
+}
