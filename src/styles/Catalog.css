@@ -33,19 +33,7 @@
 }
 
 @media (max-width:450px){
-    .cat{
-        flex-direction: column;
-    }
-
-    .view{
-        width: 100%;
-    }
-
-    .images{
-        width: 100%;
-    }
-
-    .cat div{
-        flex-direction: column;
+    .images img{
+        width: 3rem;
     }
 }

@@ -1,17 +1,19 @@
 import React from "react";
 import '../styles/Catalog.css';
-import pro from '../assets/pro.png';
-import plus from '../assets/plus.png';
-import pushti from '../assets/pushti.png';
 import { FiArrowRight } from 'react-icons/fi';
 
-const Catalog = () => {
+const Catalog = (props) => {
+
+    const first = props.first
+    const second = props.second
+    const third = props.third
+
     return(
         <div className="cat">
             <div className="images">
-                <img src={pro} alt='pro'/>
-                <img src={plus} alt="plus"/>
-                <img src={pushti} alt="pushti"/>
+                <img src={first} alt='pro'/>
+                <img src={second} alt="plus"/>
+                <img src={third} alt="pushti"/>
             </div>
             <div className="view">
                 <h1>View more</h1>
