@@ -9,6 +9,8 @@ import plus from '../assets/plus.png';
 import pushti from '../assets/pushti.png';
 import dummy from '../assets/dummy.png';
 import logo from '../assets/logo.png';
+import Links from '../components/Links';
+import { motion } from 'framer-motion';
 
 const Home = () => {
     return(
@@ -18,8 +20,18 @@ const Home = () => {
                 <div className='about cont'>
                     <div className='text'>
                         <h1>Who we are?</h1>
-                        <p>We are kerala based cattle feed manufacturers</p>
-                        <div className="btn"><p>Learn  more</p></div>
+                        <p>
+                            Better feeds private limited is one of the leading names in the industry founded in the year 2019, offering the best in class organic animal feeds under the <span id="spe">PUSHTI</span> lineup. The company is committed to produce and sell good quality compounded cattle feed and feed suppliments to dairy farmers at affordable rates. the company started it's operations at palakkad, with the manufacturing of pellet form of cattle feed and over the years this has diversified into other feeds, like poulty feed and goat feed
+                        </p>
+                        <motion.div 
+                            whileHover={{
+                                scale: 1.1,
+                                cursor: 'pointer',
+                            }}
+                            whileTap={{
+                                scale: 0.9,
+                            }}
+                            className="btn"><p>Learn  more</p></motion.div>
                     </div>
                     <div className='image'>
                         <img src={right} alt="right"/>
@@ -34,7 +46,12 @@ const Home = () => {
                 <div className='about cont'>
                     <div className='text'>
                         <h1>What is so <span id="spe">special?</span></h1>
-                        <p>We are kerala based <span id="spe">cattle feed manufacturers</span></p>
+                        <p>
+                            We strive to produce and distribute good quality compounded cattle feed in pillet form in our automated plant.
+                        </p>
+                        <p>
+                            To obtain the quality we need, we plan and implement strict quality control management and continual improvement by use of good quality raw materials, strict manufacturing process, and by ensuring hygienic conditions to ensure our customer's satisfaction. The management and staff are determined and committed to make no compromise in the quality of the feed and balance cattle feed at the lowest price possible to the satisfaction of the customer.
+                        </p>
                     </div>
                     <div className='image'>
                         <img src={organic} alt="organic"/>
