@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/Catalog.css';
 import { FiArrowRight } from 'react-icons/fi';
+import { motion } from "framer-motion";
 
 const Catalog = (props) => {
 
@@ -11,13 +12,35 @@ const Catalog = (props) => {
     return(
         <div className="cat">
             <div className="images">
-                <img src={first} alt='pro'/>
-                <img src={second} alt="plus"/>
-                <img src={third} alt="pushti"/>
+                <motion.div
+                    whileHover={{
+                        scale: 1.1,
+                        cursor: 'pointer'
+                    }}
+                ><img src={first} alt='pro'/></motion.div>
+                <motion.div
+                    whileHover={{
+                        scale: 1.1,
+                        cursor: 'pointer',
+                    }}
+                ><img src={second} alt="plus"/></motion.div>
+                <motion.div
+                    whileHover={{
+                        scale: 1.1,
+                        cursor: 'pointer',
+                    }}
+                ><img src={third} alt="pushti"/></motion.div>
             </div>
             <div className="view">
-                <h1>View more</h1>
-                <FiArrowRight/>
+                    <motion.div
+                        whileHover={{
+                            cursor: 'pointer',
+                            x: 50
+                        }}
+                        className="viewbtn">
+                        <p>View more</p>
+                        <FiArrowRight/>
+                    </motion.div>
             </div>
         </div>
     )

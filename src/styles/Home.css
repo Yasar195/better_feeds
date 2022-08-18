@@ -22,6 +22,7 @@
 
 .text h1{
     margin-bottom: 1rem;
+    font-size: 0.8rem;
 }
 
 .cont h1{
@@ -29,6 +30,11 @@
 }
 
 #spe{
+    color: #00A851;
+    font-size: 0.5rem;
+}
+
+#col{
     color: #00A851;
 }
 
@@ -51,7 +57,7 @@
 
 .about p{
     font-weight: 100;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 
 .btn{

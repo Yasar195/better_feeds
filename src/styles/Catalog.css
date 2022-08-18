@@ -24,11 +24,18 @@
     padding: 0.4rem;
 }
 
+.viewbtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .view{
     width: 20%;
 }
 
-.view h1{
+.view p{
     font-size: 0.6rem;
 }
 

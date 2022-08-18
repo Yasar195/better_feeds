@@ -21,7 +21,7 @@ const Home = () => {
                     <div className='text'>
                         <h1>Who we are?</h1>
                         <p>
-                            Better feeds private limited is one of the leading names in the industry founded in the year 2019, offering the best in class organic animal feeds under the <span id="spe">PUSHTI</span> lineup. The company is committed to produce and sell good quality compounded cattle feed and feed suppliments to dairy farmers at affordable rates. the company started it's operations at palakkad, with the manufacturing of pellet form of cattle feed and over the years this has diversified into other feeds, like poulty feed and goat feed
+                            Better feeds private limited is one of the leading names in the industry founded in the year 2019, offering the best in class organic animal feeds under the <span id="spe">PUSHTI</span> lineup. The company is committed to produce and sell <span id="spe">good quality compounded cattle feed and feed suppliments</span> to dairy farmers at affordable rates. the company started it's operations at <span id="spe">palakkad</span>, with the manufacturing of pellet form of cattle feed and over the years this has diversified into other feeds, like poulty feed and goat feed
                         </p>
                         <motion.div 
                             whileHover={{
@@ -45,7 +45,7 @@ const Home = () => {
                 </div>
                 <div className='about cont'>
                     <div className='text'>
-                        <h1>What is so <span id="spe">special?</span></h1>
+                        <h1>What is so <span id="col">special?</span></h1>
                         <p>
                             We strive to produce and distribute good quality compounded cattle feed in pillet form in our automated plant.
                         </p>
