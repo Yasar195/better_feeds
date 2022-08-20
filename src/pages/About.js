@@ -16,7 +16,12 @@ const About = () => {
                         <p>&gt;</p>
                         <h2 id="green">About better feeds</h2>
                     </div>
-                    <h2 className="subheading" id="green">Who we are?</h2>
+                    <motion.h2 
+                        whileInView={{
+                            x: 20,
+                            width: '100%'
+                        }}
+                        className="subheading" id="green">Who we are?</motion.h2>
                     <p className="para">
                         Better feeds private limited is one of the leading names in the industry founded in the year 2019, offering the best in class organic animal feeds under the PUSHTI lineup. The company is committed to produce and sell good quality compounded cattle feed and feed suppliments to dairy farmers at affordable rates. the company started it's operations at palakkad, with the manufacturing of pellet form of cattle feed and over the years this has diversified into other feeds, like poulty feed and goat feed
                     </p>
@@ -29,7 +34,11 @@ const About = () => {
                             To be the best feed manufacturers offering the customers lowest possible prices and great services, with no compromise in quality
                         </p>
                     </div>
-                    <h2 className="subheading" id="green">Quality</h2>
+                    <motion.h2
+                        whileInView={{
+                            x: 20
+                        }}
+                        className="subheading" id="green">Quality</motion.h2>
                     <p className="para">
                         We strive to produce and distribute good quality compounded cattle feed in pellet form in our automated plant. To obtain the quality we need, we plan and implement strict quality control management and continual improvement by use of good quality raw materials, strict manufacturing process, and by ensuring hygienic conditions to ensure our customers' satisfaction. The management and staff are determined and committed to make no compromise in the quality of the feed and balance cattle feed at the lowest price possible to the satisfaction of customer.
                     </p>

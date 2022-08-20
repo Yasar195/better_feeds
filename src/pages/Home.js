@@ -7,7 +7,9 @@ import organic from '../assets/organic.png';
 import pro from '../assets/pro.png';
 import plus from '../assets/plus.png';
 import pushti from '../assets/pushti.png';
-import dummy from '../assets/dummy.png';
+import img1 from '../assets/gal1.png';
+import img2 from '../assets/gal2.png';
+import img3 from '../assets/gal3.png';
 import Links from '../components/Links';
 import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
@@ -15,13 +17,27 @@ import { Link } from 'react-router-dom';
 
 
 const Home = () => {
+
+    const variants = {
+        view: {
+            x: 20,
+        },
+        btnanim: {
+            x: 20,
+            scale: 1.05
+        }
+    }
+
     return(
         <div className='home'>
             <Nav/>
             <div className='main'>
                 <div className='about cont'>
                     <div className='text'>
-                        <h1>Who we are?</h1>
+                        <motion.h1
+                            whileInView="view"
+                            variants={variants}
+                        >Who we are?</motion.h1>
                         <p>
                             Better feeds private limited is one of the leading names in the industry founded in the year 2019, offering the best in class organic animal feeds under the <span id="spe">PUSHTI</span> lineup. The company is committed to produce and sell <span id="spe">good quality compounded cattle feed and feed suppliments</span> to dairy farmers at affordable rates. the company started it's operations at <span id="spe">palakkad</span>, with the manufacturing of pellet form of cattle feed and over the years this has diversified into other feeds, like poulty feed and goat feed
                         </p>
@@ -33,6 +49,8 @@ const Home = () => {
                             whileTap={{
                                 scale: 0.9,
                             }}
+                            whileInView="btnanim"
+                            variants={variants}
                             className="btn"><p>Learn  more</p></motion.div></Link>
                     </div>
                     <div className='image'>
@@ -40,14 +58,14 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='seller cont'>
-                    <h1>Our best sellers</h1>
+                    <motion.h1 variants={variants} whileInView="view">Our best sellers</motion.h1>
                     <div className='catalog'>
                         <Catalog first={pro} second={plus} third={pushti}/>
                     </div>
                 </div>
                 <div className='about cont'>
                     <div className='text'>
-                        <h1>What is so <span id="col">special?</span></h1>
+                        <motion.h1 whileInView="view" variants={variants}>What is so <span id="col">special?</span></motion.h1>
                         <p>
                             We strive to produce and distribute good quality compounded cattle feed in pillet form in our automated plant.
                         </p>
@@ -60,9 +78,12 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='gallery cont'>
-                    <h1>Gallery</h1>
+                    <motion.h1
+                        variants={variants}
+                        whileInView="view"
+                    >Gallery</motion.h1>
                     <div className='catalog'>
-                        <Catalog first={dummy} second={dummy} third={dummy}/>
+                        <Catalog first={img1} second={img2} third={img3}/>
                     </div>
                 </div>
             </div>
