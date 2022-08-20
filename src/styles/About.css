@@ -6,6 +6,10 @@
     display: flex;
 }
 
+#right{
+    width: 40%;
+}
+
 #left{
     width: 60%;   
 }
@@ -88,4 +92,19 @@
 .para{
     margin-top: 1rem;
     font-size: 0.5rem;
+}
+
+@media (max-width: 1300px){
+    #left{
+        width: 100%;
+    }
+
+    #right{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
 }
