@@ -8,9 +8,11 @@ import pro from '../assets/pro.png';
 import plus from '../assets/plus.png';
 import pushti from '../assets/pushti.png';
 import dummy from '../assets/dummy.png';
-import logo from '../assets/logo.png';
 import Links from '../components/Links';
 import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
     return(
@@ -23,7 +25,7 @@ const Home = () => {
                         <p>
                             Better feeds private limited is one of the leading names in the industry founded in the year 2019, offering the best in class organic animal feeds under the <span id="spe">PUSHTI</span> lineup. The company is committed to produce and sell <span id="spe">good quality compounded cattle feed and feed suppliments</span> to dairy farmers at affordable rates. the company started it's operations at <span id="spe">palakkad</span>, with the manufacturing of pellet form of cattle feed and over the years this has diversified into other feeds, like poulty feed and goat feed
                         </p>
-                        <motion.div 
+                        <Link to="about/" style={{textDecoration: 'none'}}><motion.div 
                             whileHover={{
                                 scale: 1.1,
                                 cursor: 'pointer',
@@ -31,7 +33,7 @@ const Home = () => {
                             whileTap={{
                                 scale: 0.9,
                             }}
-                            className="btn"><p>Learn  more</p></motion.div>
+                            className="btn"><p>Learn  more</p></motion.div></Link>
                     </div>
                     <div className='image'>
                         <img src={right} alt="right"/>
@@ -63,46 +65,8 @@ const Home = () => {
                         <Catalog first={dummy} second={dummy} third={dummy}/>
                     </div>
                 </div>
-                <footer>
-                    <div className='div'>
-                        <div id="im">
-                            <img src={logo} alt="logo"/>
-                        </div>
-                        <div className='social'>
-                            <h2>Contact</h2>
-                            <div className='grid'>
-                                <div className='media mail'>
-                                    <p>MAIL</p>
-                                </div>
-                                <div className='media insta'>
-                                    <p>INSTAGRAM</p>
-                                </div>
-                                <div className='media fb'>
-                                    <p>FACEBOOK</p>
-                                </div>
-                                <div className='media whats'>
-                                    <p>WHATSAPP</p>
-                                </div>
-                                <div className='media share'>
-                                    <p>SHARE</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='div sec'>
-                        <div>
-                            <h2>Location</h2>
-                            <p>
-                                we are kerala based
-                            </p>
-                        </div>
-                        <div>
-                            <h2>Careers</h2>
-                            <p>Know more about current job openings at  better feeds</p>
-                        </div>
-                    </div>
-                </footer>
             </div>
+            <Footer/>
         </div>
     )
 }

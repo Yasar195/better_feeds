@@ -1,0 +1,91 @@
+.aboutdiv{
+    padding: 1rem;
+}
+
+.flex{
+    display: flex;
+}
+
+#left{
+    width: 60%;   
+}
+
+#right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading p{
+    font-size: 1rem;
+}
+
+#green{
+    color: #00A851;
+}
+
+.subheading{
+    margin-top: 2rem;
+}
+
+.focus{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.branding{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.branding img{
+    width: 3rem;
+}
+
+.branding p{
+    font-size: 0.5rem;
+}
+
+.backbtn{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.3rem;
+    border: 2px solid #00A851;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.backbtn p{
+    font-size: 0.5rem;
+    color: black;
+}
+
+.focus p{
+    text-align: center;
+}
+
+.para{
+    margin-top: 1rem;
+    font-size: 0.5rem;
+}
