@@ -1,0 +1,85 @@
+.productdiv{
+    padding: 1rem;
+}
+
+.brand{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.brand img{
+    width: 4rem;
+}
+
+.brand p{
+    font-size: 0.6rem;
+}
+
+.product{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #00A851;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+#product img{
+    width: 3.5rem;
+}
+
+#product p{
+    font-size: 0.6rem;
+}
+
+.content{
+    margin-top: 2rem;
+}
+
+.content div{
+    margin-top: 1rem;
+}
+
+.title{
+    width: 100%;
+}
+
+.title h2{
+    text-align: center;
+    color: #00A851;
+}
+
+.details h4{
+    color: #00A851;
+}
+
+.details p{
+    font-size: 0.6rem;
+}
+
+.aboutpro{
+    width: 100%;
+    display: flex;
+}
+
+#price{
+    width: 50%;
+    padding: 0.5rem;
+}
+
+#description{
+    width: 50%;
+}
