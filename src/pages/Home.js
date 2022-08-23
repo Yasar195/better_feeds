@@ -86,8 +86,8 @@ const Home = () => {
                         <Catalog first={img1} second={img2} third={img3}/>
                     </div>
                 </div>
+                <Footer/>
             </div>
-            <Footer/>
         </div>
     )
 }

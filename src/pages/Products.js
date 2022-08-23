@@ -72,8 +72,8 @@ const Products = () => {
                         <div className="details">
                             <h4>Product details</h4>
                             <div>
-                                <p>Price : 10000</p>
-                                <p>Net weight: 10kg</p>
+                                <p>Price : {content.price}</p>
+                                <p>Net weight: {content.weight}</p>
                             </div>
                         </div>
                     </div>
