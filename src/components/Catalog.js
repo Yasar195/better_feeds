@@ -1,13 +1,14 @@
-import React from "react";
 import '../styles/Catalog.css';
 import { FiArrowRight } from 'react-icons/fi';
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Catalog = (props) => {
 
     const first = props.first
     const second = props.second
     const third = props.third
+    const link = props.link
 
     return(
         <div className="cat">
@@ -32,7 +33,7 @@ const Catalog = (props) => {
                 ><img src={third} alt="pushti"/></motion.div>
             </div>
             <div className="view">
-                    <motion.div
+                    <Link to={link} style={{textDecoration: 'none'}}><motion.div
                         whileHover={{
                             cursor: 'pointer',
                             x: 50
@@ -40,7 +41,7 @@ const Catalog = (props) => {
                         className="viewbtn">
                         <p>View more</p>
                         <FiArrowRight/>
-                    </motion.div>
+                    </motion.div></Link>
             </div>
         </div>
     )

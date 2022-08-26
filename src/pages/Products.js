@@ -5,6 +5,9 @@ import { AiFillHome } from 'react-icons/ai';
 import pushti from '../assets/pushtilogo.png';
 import product from '../assets/product.png';
 import data from './data.json';
+import Footer from '../components/Footer';
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Products = () => {
 
@@ -12,6 +15,22 @@ const Products = () => {
 
     const changeHandler = (index) => {
         setContent(data[index])
+    }
+
+    const variants = {
+        hover: {
+            scale: 1.1,
+            cursor: 'pointer',
+        },
+        tap: {
+            scale:0.9,
+        },
+        btnhover:{
+            scale: 1.1,
+            cursor: 'pointer',
+            backgroundColor: 'white',
+            color: '#00A851'
+        }
     }
 
     const variable = 0;
@@ -28,38 +47,62 @@ const Products = () => {
                 <p>NOTHING BETTER THAN BETTER FEEDS</p>
             </div>
             <div className="product">
-                <div>
+                <Link to="/"><motion.div
+                    whileHover="btnhover"
+                    whileTap="tap"
+                    variants={variants}
+                    className="homebtn">
                     <AiFillHome/>
-                </div>
+                </motion.div></Link>
                 <div>
-                    <div id="product" onClick={()=>changeHandler(1)}>
+                    <motion.div
+                        variants={variants}
+                        whileHover="hover"
+                        whileTap="tap"
+                        id="product" onClick={()=>changeHandler(1)}>
                         <img src={pushti} alt="pushti"/>
                         <p>pushti pro</p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div>
-                    <div id="product" onClick={()=>changeHandler(2)}>
+                    <motion.div 
+                        variants={variants}
+                        whileTap="tap"
+                        whileHover="hover"
+                        id="product" onClick={()=>changeHandler(2)}>
                         <img src={pushti} alt="pushti"/>
                         <p>pushti plus</p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div>
-                    <div id="product" onClick={()=>changeHandler(0)}>
+                    <motion.div
+                        variants={variants}
+                        whileTap="tap"
+                        whileHover="hover"
+                        id="product" onClick={()=>changeHandler(0)}>
                         <img src={pushti} alt="pushti"/>
                         <p>pushti</p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div>
-                    <div id="product" onClick={()=>changeHandler(3)}>
+                    <motion.div 
+                        variants={variants}
+                        whileTap="tap"
+                        whileHover="hover"
+                        id="product" onClick={()=>changeHandler(3)}>
                         <img src={pushti} alt="pushti"/>
                         <p>pushti goat</p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div>
-                    <div id="product" onClick={()=>changeHandler(4)}>
+                    <motion.div
+                        variants={variants}
+                        whileTap="tap"
+                        whileHover="hover"
+                        id="product" onClick={()=>changeHandler(4)}>
                         <img src={pushti} alt="pushti"/>
                         <p>layer mash</p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             <div className="content">
@@ -79,9 +122,11 @@ const Products = () => {
                     </div>
                     <div id="description">
                         <h3>description</h3>
+                        <p>{content.description}</p>
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

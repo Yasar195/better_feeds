@@ -10,7 +10,6 @@ import pushti from '../assets/pushti.png';
 import img1 from '../assets/gal1.png';
 import img2 from '../assets/gal2.png';
 import img3 from '../assets/gal3.png';
-import Links from '../components/Links';
 import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
@@ -60,7 +59,7 @@ const Home = () => {
                 <div className='seller cont'>
                     <motion.h1 variants={variants} whileInView="view">Our best sellers</motion.h1>
                     <div className='catalog'>
-                        <Catalog first={pro} second={plus} third={pushti}/>
+                        <Catalog first={pro} second={plus} third={pushti} link="products/"/>
                     </div>
                 </div>
                 <div className='about cont'>
@@ -83,7 +82,7 @@ const Home = () => {
                         whileInView="view"
                     >Gallery</motion.h1>
                     <div className='catalog'>
-                        <Catalog first={img1} second={img2} third={img3}/>
+                        <Catalog first={img1} second={img2} third={img3} link="https://www.google.com"/>
                     </div>
                 </div>
                 <Footer/>

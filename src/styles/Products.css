@@ -27,6 +27,16 @@
     justify-content: space-evenly;
 }
 
+.homebtn{
+    background-color: #00A851;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+}
+
 #product{
     display: flex;
     align-items: center;
@@ -34,7 +44,7 @@
     flex-direction: column;
     border: 2px solid #00A851;
     border-radius: 15px;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 #product img{
@@ -82,4 +92,12 @@
 
 #description{
     width: 50%;
+    border: 2px solid #00A851;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+#description p{
+    margin-top: 1rem;
+    font-size: 0.6rem;
 }
