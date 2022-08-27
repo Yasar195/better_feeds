@@ -1,0 +1,57 @@
+.pros{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.drop{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid #00A851;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.drop select{
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.drop img{
+    width: 50%;
+}
+
+.homebtn{
+    background-color: #00A851;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+}
+
+#product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #00A851;
+    border-radius: 15px;
+    padding: 0.2rem;
+}
+
+#product img{
+    width: 3.5rem;
+}
+
+#product p{
+    font-size: 0.6rem;
+}
