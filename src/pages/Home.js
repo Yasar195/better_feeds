@@ -17,26 +17,13 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
 
-    const variants = {
-        view: {
-            x: 20,
-        },
-        btnanim: {
-            x: 20,
-            scale: 1.05
-        }
-    }
-
     return(
         <div className='home'>
             <Nav/>
             <div className='main'>
                 <div className='about cont'>
                     <div className='text'>
-                        <motion.h1
-                            whileInView="view"
-                            variants={variants}
-                        >Who we are?</motion.h1>
+                        <h1>Who we are?</h1>
                         <p>
                             Better feeds private limited is one of the leading names in the industry founded in the year 2019, offering the best in class organic animal feeds under the <span id="spe">PUSHTI</span> lineup. The company is committed to produce and sell <span id="spe">good quality compounded cattle feed and feed suppliments</span> to dairy farmers at affordable rates. the company started it's operations at <span id="spe">palakkad</span>, with the manufacturing of pellet form of cattle feed and over the years this has diversified into other feeds, like poulty feed and goat feed
                         </p>
@@ -48,8 +35,6 @@ const Home = () => {
                             whileTap={{
                                 scale: 0.9,
                             }}
-                            whileInView="btnanim"
-                            variants={variants}
                             className="btn"><p>Learn  more</p></motion.div></Link>
                     </div>
                     <div className='image'>
@@ -57,14 +42,14 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='seller cont'>
-                    <motion.h1 variants={variants} whileInView="view">Our best sellers</motion.h1>
+                    <h1>Our best sellers</h1>
                     <div className='catalog'>
                         <Catalog first={pro} second={plus} third={pushti} link="products/"/>
                     </div>
                 </div>
                 <div className='about cont'>
                     <div className='text'>
-                        <motion.h1 whileInView="view" variants={variants}>What is so <span id="col">special?</span></motion.h1>
+                        <h1>What is so <span id="col">special?</span></h1>
                         <p>
                             We strive to produce and distribute good quality compounded cattle feed in pillet form in our automated plant.
                         </p>
@@ -78,8 +63,6 @@ const Home = () => {
                 </div>
                 <div className='gallery cont'>
                     <motion.h1
-                        variants={variants}
-                        whileInView="view"
                     >Gallery</motion.h1>
                     <div className='catalog'>
                         <Catalog first={img1} second={img2} third={img3} link="https://www.google.com"/>

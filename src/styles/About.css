@@ -38,6 +38,7 @@
 
 .subheading{
     margin-top: 2rem;
+    font-size: 1.5rem;
 }
 
 .focus{
@@ -91,7 +92,8 @@
 
 .para{
     margin-top: 1rem;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+    color: rgba(0,0,0,0.5);
 }
 
 @media (max-width: 1300px){
@@ -106,5 +108,17 @@
 
     .flex{
         flex-direction: column;
+    }
+}
+
+@media (max-width: 420px){
+    .heading{
+        width: 70%;
+    }
+}
+
+@media (max-width: 350px){
+    .heading{
+        width: 100%;
     }
 }

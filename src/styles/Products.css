@@ -26,7 +26,7 @@
 }
 
 .brand p{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 
 .product{
@@ -56,7 +56,7 @@
 }
 
 .details p{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 
 .aboutpro{
@@ -78,7 +78,8 @@
 
 #description p{
     margin-top: 1rem;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    color: rgba(0,0,0,0.5);
 }
 
 @media (max-width: 800px){

@@ -22,20 +22,22 @@
 
 .text h1{
     margin-bottom: 1rem;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
 }
 
 .cont h1{
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 #spe{
     color: #00A851;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 
 #col{
     color: #00A851;
+    font-size: 1.5rem;
 }
 
 .image img{
@@ -57,7 +59,8 @@
 
 .about p{
     font-weight: 100;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+    color: rgba(0,0,0,0.5);
 }
 
 .btn{
@@ -90,5 +93,9 @@
 
     .image{
         width: 100%;
+    }
+
+    .image img{
+        margin-top: 1.5rem;
     }
 }
