@@ -8,7 +8,7 @@ import Pros from "../components/Pros";
 
 const Products = () => {
 
-    const [content, setContent] = useState({"name": "", "description": "", "price": "", "weight": ""})
+    const [content, setContent] = useState({"name": "","type": "", "pillet_size":"","pack_size": "","shelf_life": "", "description": "", "price": "", "weight": ""})
 
     const changeHandler = (index) => {
         setContent(data[index])
@@ -42,6 +42,10 @@ const Products = () => {
                             <div>
                                 <p>Price : {content.price}</p>
                                 <p>Net weight: {content.weight}</p>
+                                <p>Type: {content.type}</p>
+                                <p>Pellet size: {content.pillet_size}</p>
+                                <p>Pack size: {content.pack_size}</p>
+                                <p>Shelf life: {content.shelf_life}</p>
                             </div>
                         </div>
                     </div>

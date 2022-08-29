@@ -13,6 +13,7 @@ import img3 from '../assets/gal3.png';
 import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import Links from '../components/Links';
 
 
 const Home = () => {

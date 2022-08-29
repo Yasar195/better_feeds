@@ -32,7 +32,7 @@
 
 #spe{
     color: #00A851;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 
 #col{
@@ -59,7 +59,7 @@
 
 .about p{
     font-weight: 100;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     color: rgba(0,0,0,0.5);
 }
 
@@ -97,5 +97,9 @@
 
     .image img{
         margin-top: 1.5rem;
+    }
+
+    .catalog{
+        height: 20vh;
     }
 }
