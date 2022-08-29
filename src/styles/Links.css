@@ -5,6 +5,17 @@
     justify-content: space-evenly;
 }
 
-.links{
-    font-size: 0.8rem;
+.links p{
+    font-size: 0.7rem;
+    color: #1E1E1E;
+}
+
+.links img{
+    width: 4rem;
+}
+
+@media (max-width: 500px){
+    .links img{
+        width: 6rem;
+    }
 }

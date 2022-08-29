@@ -125,6 +125,13 @@ const Pros = (props) => {
     else{
         return(
             <div className="pros">
+                <Link to="/"><motion.div
+                        whileHover="btnhover"
+                        whileTap="tap"
+                        variants={variants}
+                        className="homebtn">
+                    <AiFillHome/>
+                </motion.div></Link>
                 <div className="drop">
                     <select onChange={changeHandler}>
                     {

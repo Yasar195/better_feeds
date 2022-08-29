@@ -18,10 +18,10 @@ const About = () => {
                     </div>
                     <h2 className="subheading" id="green">Who we are?</h2>
                     <p className="para">
-                        Better feeds private limited is one of the leading names in the industry founded in the year 2019, offering the best in class organic animal feeds under the PUSHTI lineup. The company is committed to produce and sell good quality compounded cattle feed and feed suppliments to dairy farmers at affordable rates. the company started it's operations at palakkad, with the manufacturing of pellet form of cattle feed and over the years this has diversified into other feeds, like poulty feed and goat feed
+                        Better feeds private limited is one of the leading names in the industry founded in the year 2019, offering the best in class organic animal feeds under the <span>PUSHTI lineup</span>. The company is committed to produce and sell <span>good quality compounded cattle feed and feed suppliments</span> to dairy farmers at affordable rates. the company started it's operations at <span>palakkad</span>, with the manufacturing of pellet form of cattle feed and over the years this has diversified into other feeds, like poulty feed and goat feed
                     </p>
                     <p className="para">
-                        The PUSHTI lineup consists of Cattle Feed, Goat Feed and Layer Math. The offered range for livestock is inclusive of Pushti, Pushti pro and Pushti plus cattle feeds. All of our products are 100% organic which will help in making the animals healthy and more profitable for the former as it will provide the best Quality milk in higher Quantities.
+                        The PUSHTI lineup consists of <span>Cattle Feed, Goat Feed and Layer Mash</span>. The offered range for livestock is inclusive of <span>Pushti, Pushti pro and Pushti plus</span> cattle feeds. All of our products are <span>100% organic</span> which will help in making the animals healthy and more profitable for the former as it will provide the <span>best Quality milk in higher Quantities</span>.
                     </p>
                     <div className="focus">
                         <h1 id="green">Our vision</h1>

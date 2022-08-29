@@ -22,6 +22,7 @@ const Home = () => {
         <div className='home'>
             <Nav/>
             <div className='main'>
+                <Links/>
                 <div className='about cont'>
                     <div className='text'>
                         <h1>Who we are?</h1>

@@ -39,7 +39,6 @@ const Catalog = (props) => {
                             x: 50
                         }}
                         className="viewbtn">
-                        <p>View more</p>
                         <FiArrowRight/>
                     </motion.div></Link>
             </div>

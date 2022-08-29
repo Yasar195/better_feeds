@@ -10,6 +10,7 @@
 .text{
     width: 55%;
     height: 100%;
+    margin-top: 1rem;
 }
 
 .image{
@@ -60,20 +61,24 @@
 .about p{
     font-weight: 100;
     font-size: 0.5rem;
-    color: rgba(0,0,0,0.5);
+    color: black;
 }
 
 .btn{
-    border: 3px solid #00A851;
+    border: 2px solid #00A851;
     width: fit-content;
     padding: 0.2rem;
     border-radius: 15px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .btn p{
     font-weight: bold;
     color: black;
+}
+
+.catalog{
+    margin-top: 2.5rem;
 }
 
 @media (max-width: 1200px){
