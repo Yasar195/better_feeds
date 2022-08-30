@@ -5,17 +5,22 @@ import product from '../assets/product.png';
 import data from './data.json';
 import Footer from '../components/Footer';
 import Pros from "../components/Pros";
+import pro from '../assets/pro.png';
+import plus from '../assets/plus.png';
+import pushti from '../assets/pushti.png';
 
 const Products = () => {
 
-    const [content, setContent] = useState({"name": "","type": "", "pillet_size":"","pack_size": "","shelf_life": "", "description": "", "price": "", "weight": ""})
+    const [content, setContent] = useState({"id": "","name": "","type": "","img": "", "pillet_size":"","pack_size": "","shelf_life": "", "description": "", "price": "", "weight": ""})
+
+    const imgs = [pushti, pro, plus, product, product]
 
     const changeHandler = (index) => {
         setContent(data[index])
     }
 
     useEffect(()=> {
-        setContent(data[1])
+        setContent(data[0])
     }, [])
 
     return(
@@ -35,7 +40,7 @@ const Products = () => {
                 <div className="aboutpro">
                     <div id="price">
                         <div className="bagimg">
-                            <img id="bag" src={product} alt="product"/>
+                            <img id="bag" src={imgs[content.id]} alt="product"/>
                         </div>
                         <div className="details">
                             <h4>Product details</h4>

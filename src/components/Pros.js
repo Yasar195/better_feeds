@@ -34,6 +34,7 @@ const Pros = (props) => {
         hover: {
             scale: 1.1,
             cursor: 'pointer',
+            boxShadow: "0px 3px 50px rgba(0, 168, 81, 0.3)",
         },
         tap: {
             scale:0.9,

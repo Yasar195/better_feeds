@@ -1,7 +1,9 @@
 [
     {
+        "id": "0",
         "name": "PUSHTI",
         "type": "Mash",
+        "img": "../assets/pushti.png",
         "pillet_size": "6mm",
         "pack_size": "20kg",
         "shelf_life": "45 days from MFD",
@@ -10,8 +12,10 @@
         "weight": "10kg"
     },
     {
+        "id": "1",
         "name": "PUSHTI PRO",
         "type": "Mash",
+        "img": "../assets/pro.png",
         "pillet_size": "5mm",
         "pack_size": "20kg",
         "shelf_life": "45 days from MFD",
@@ -20,8 +24,10 @@
         "weight": "10kg"
     },
     {
+        "id": "2",
         "name": "PUSHTI PLUS",
         "type": "Mash",
+        "img": "../assets/plus.png",
         "pillet_size": "4mm",
         "pack_size": "20kg",
         "shelf_life": "45 days from MFD",
@@ -30,13 +36,17 @@
         "weight": "10kg"
     },
     {
+        "id": "3",
         "name": "pushi (goat)",
+        "img": "../assets/product.png",
         "description": "This is a big description of pushti (goat) product",
         "price": "6000",
         "weight": "10kg"
     },
     {
+        "id": "4",
         "name": "Layer mash",
+        "img": "../assets/product.png",
         "description": "This is a big description of mash product",
         "price": "7000",
         "weight": "10kg"

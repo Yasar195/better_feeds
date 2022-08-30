@@ -57,7 +57,7 @@
 }
 
 .details p{
-    font-size: 0.5rem;
+    font-size: 0.6rem;
 }
 
 .aboutpro{
@@ -77,10 +77,14 @@
     padding: 1rem;
 }
 
+#price .details{
+    margin-top: 2rem;
+}
+
 #description p{
     margin-top: 1rem;
-    font-size: 0.5rem;
-    color: rgba(0,0,0,0.5);
+    font-size: 0.6rem;
+    color: black;
 }
 
 @media (max-width: 800px){
