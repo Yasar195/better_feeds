@@ -51,6 +51,7 @@
     border-radius: 15px;
     margin-top: 2rem;
     padding: 1rem;
+    transition: all 1s ease-in-out;
 }
 
 .branding{
@@ -104,6 +105,7 @@ span{
 @media (max-width: 1300px){
     #left{
         width: 100%;
+        margin-top: 2rem;
     }
 
     #right{
@@ -112,7 +114,7 @@ span{
     }
 
     .flex{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 

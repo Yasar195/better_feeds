@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import '../styles/About.css';
 import Footer from "../components/Footer";
 import logo from '../assets/logo.png';
@@ -7,6 +7,29 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const About = () => {
+
+    const jsonArray = [{
+        "key": "0",
+        "heading": "Our vision",
+        "content": "To be the best feed manufacturers offering the customers lowest possible prices and great services, with no compromise in quality"
+    },
+    {
+        "key": "1",
+        "heading": "Our mission",
+        "content": "To Serve and develop organic lives and to maintain a closer and healthy relation with the farmers."
+    }
+    ]
+
+    const [focus, setFocus] = useState(jsonArray[0]);
+
+    useEffect(()=> {
+        const interval = setInterval(()=>{
+            setFocus(previous => previous.key == 0 ? jsonArray[1]: jsonArray[0])
+        }, 5000)
+
+        return ()=> clearInterval(interval);
+    }, [])
+
     return(
         <div className="aboutdiv">
             <div className="flex">
@@ -24,10 +47,8 @@ const About = () => {
                         The PUSHTI lineup consists of <span>Cattle Feed, Goat Feed and Layer Mash</span>. The offered range for livestock is inclusive of <span>Pushti, Pushti pro and Pushti plus</span> cattle feeds. All of our products are <span>100% organic</span> which will help in making the animals healthy and more profitable for the former as it will provide the <span>best Quality milk in higher Quantities</span>.
                     </p>
                     <div className="focus">
-                        <h1 id="green">Our vision</h1>
-                        <p className="para">
-                            To be the best feed manufacturers offering the customers lowest possible prices and great services, with no compromise in quality
-                        </p>
+                        <h1 id="green">{focus.heading}</h1>
+                        <p className="para">{focus.content}</p>
                     </div>
                     <h2 className="subheading" id="green">Quality</h2>
                     <p className="para">
