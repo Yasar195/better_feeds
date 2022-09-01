@@ -7,6 +7,9 @@ footer{
     background-color: #F2F2F2;
 }
 
+h2{
+    color: #00A851;
+}
 
 #im{
     width: 50%;
@@ -28,18 +31,22 @@ footer{
 
 
 .insta{
-    border: 2px solid #FF005C;
+    border: 1px solid #FF005C;
 }
 
 .whats{
-    border: 2px solid #00A851;
+    border: 1px solid #00A851;
 }
 
 .share{
-    border: 2px solid #454545;
+    border: 1px solid #454545;
 }
 .sec div{
     width: 50%;
+}
+
+#data{
+    margin-top: 1rem;
 }
 
 .grid{
@@ -47,6 +54,7 @@ footer{
     grid-template-columns: repeat(2,1fr);
     column-gap: 0.4rem;
     row-gap: 0.4rem;
+    margin-top: 1rem;
 }
 
 .sec div p{
@@ -54,11 +62,11 @@ footer{
 }
 
 .mail{
-    border: 2px solid #FF5D5D;
+    border: 1px solid #FF5D5D;
 }
 
 .fb{
-    border: 2px solid #6184FF;
+    border: 1px solid #6184FF;
 }
 
 .div{
@@ -70,7 +78,7 @@ footer{
 .media{
     width: fit-content;
     padding: 0.3rem;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .media p{
@@ -78,7 +86,7 @@ footer{
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 800px){
     footer{
         flex-direction: column;
     }
@@ -89,5 +97,9 @@ footer{
 
     #im{
         justify-content: flex-start;
+    }
+
+    .sec{
+        margin-top: 1rem;
     }
 }

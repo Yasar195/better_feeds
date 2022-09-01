@@ -33,13 +33,13 @@ const Footer = () => {
             <div className='div sec'>
                 <div>
                     <h2>Location</h2>
-                    <p>
+                    <p id="data">
                         we are kerala based
                     </p>
                 </div>
                 <div>
                     <h2>Careers</h2>
-                    <p>Know more about current job openings at  better feeds</p>
+                    <p id="data">Know more about current job openings at  better feeds</p>
                 </div>
             </div>
         </footer>

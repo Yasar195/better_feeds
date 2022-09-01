@@ -36,7 +36,8 @@ const Catalog = (props) => {
                     <Link to={link} style={{textDecoration: 'none'}}><motion.div
                         whileHover={{
                             cursor: 'pointer',
-                            x: 50
+                            backgroundColor: 'white',
+                            color: 'black',
                         }}
                         className="viewbtn">
                         <FiArrowRight/>
