@@ -11,7 +11,7 @@ import pushti from '../assets/pushti.png';
 
 const Products = () => {
 
-    const [content, setContent] = useState({"id": "","name": "","type": "","img": "", "pillet_size":"","pack_size": "","shelf_life": "", "para1": "","para2": "", "price": "", "weight": "", "heading": "", "benefits": [], "ing_head": "", "ingredients": []})
+    const [content, setContent] = useState({"id": "","name": "","type": "","img": "", "pillet_size":"","pack_size": "","shelf_life": "", "para1": "","para2": "", "price": "", "weight": "", "heading": "", "benefits": [], "ing_head": "", "ingredients": [], "is_table": false})
 
     const imgs = [pushti, pro, plus, product, product]
 
@@ -45,14 +45,46 @@ const Products = () => {
                         <div className="details">
                             <h4>Product details</h4>
                             <div>
-                                <p>Price : {content.price}</p>
-                                <p>Net weight: {content.weight}</p>
                                 <p>Type: {content.type}</p>
                                 <p>Pellet size: {content.pillet_size}</p>
                                 <p>Pack size: {content.pack_size}</p>
                                 <p>Shelf life: {content.shelf_life}</p>
                             </div>
                         </div>
+                        {
+                            content.is_table && (
+                                <div className="details">
+                                    <h4>Daily feeding schedule</h4>
+                                    <p id="p">Indroduce feed slowly when converting from existing feed (conversion time: 20 days)</p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Particulars</th>
+                                                <th>Cows</th>
+                                                <th>Buffaloes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>For milk production per litre</td>
+                                                <td>400 Grams</td>
+                                                <td>500 Grams</td>
+                                            </tr>
+                                            <tr>
+                                                <td>For maintenance</td>
+                                                <td>1.5 - 2.0 kg</td>
+                                                <td>2.0 - 2.5 kg</td>
+                                            </tr>
+                                            <tr>
+                                                <td>For Pregnancy</td>
+                                                <td>2.0 kg</td>
+                                                <td>2.0 - 2.5 kg</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            )
+                        }
                     </div>
                     <div id="description">
                         <h3>description</h3>
