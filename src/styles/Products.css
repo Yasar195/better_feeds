@@ -87,6 +87,15 @@
     color: black;
 }
 
+#description ul{
+    padding: 1rem;
+}
+
+#description ul li{
+    font-size: 0.6rem;
+    color: #00A851;
+}
+
 @media (max-width: 800px){
     .aboutpro{
         flex-direction: column;

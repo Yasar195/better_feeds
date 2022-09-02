@@ -33,6 +33,10 @@ const Links = () => {
         }
     }
 
+    const handleContact = () => {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
     if(width>500){
         return(
             <div className="links">
@@ -40,7 +44,7 @@ const Links = () => {
                 <Link to="/products" style={{textDecoration: 'none'}}><motion.p variants={variants} whileHover="hover" whileTap="tap">PRODUCTS</motion.p></Link>
                 <img src={pushti} alt="logo"/>
                 <Link to="/about" style={{textDecoration: 'none'}}><motion.p variants={variants} whileHover="hover" whileTap="tap">ABOUT</motion.p></Link>
-                <motion.p variants={variants} whileHover="hover" whileTap="tap">CONTACT</motion.p>
+                <motion.p onClick={handleContact} variants={variants} whileHover="hover" whileTap="tap">CONTACT</motion.p>
             </div>
         )
     }

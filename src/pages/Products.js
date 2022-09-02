@@ -11,12 +11,12 @@ import pushti from '../assets/pushti.png';
 
 const Products = () => {
 
-    const [content, setContent] = useState({"id": "","name": "","type": "","img": "", "pillet_size":"","pack_size": "","shelf_life": "", "description": "", "price": "", "weight": ""})
+    const [content, setContent] = useState({"id": "","name": "","type": "","img": "", "pillet_size":"","pack_size": "","shelf_life": "", "para1": "","para2": "", "price": "", "weight": "", "heading": "", "benefits": [], "ing_head": "", "ingredients": []})
 
     const imgs = [pushti, pro, plus, product, product]
 
     const changeHandler = (index) => {
-        setContent(data[index])
+        setContent(data[index]);
     }
 
     useEffect(()=> {
@@ -56,7 +56,28 @@ const Products = () => {
                     </div>
                     <div id="description">
                         <h3>description</h3>
-                        <p>{content.description}</p>
+                        <p>{content.para1}</p>
+                        <p>{content.para2}</p>
+                        <p>{content.ing_head}</p>
+                        <ul>
+                            {
+                                content.ingredients.map((ing, index)=>{
+                                    return (
+                                        <li key={index}>{ing}</li>
+                                    )
+                                })
+                            }
+                        </ul>
+                        <p>{content.heading}</p>
+                        <ul>
+                            {
+                                content.benefits.map((ben, index)=>{
+                                    return(
+                                        <li key={index}>{ben}</li>
+                                    )
+                                })
+                            }
+                        </ul>
                     </div>
                 </div>
             </div>

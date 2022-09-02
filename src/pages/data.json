@@ -7,21 +7,27 @@
         "pillet_size": "6mm",
         "pack_size": "20kg",
         "shelf_life": "45 days from MFD",
-        "description": "We are Kerala based Cattle Feed ManufacturersLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris in aliquam sem fringilla ut morbi tincidunt.",
         "price": "5000",
-        "weight": "10kg"
+        "weight": "10kg",
+        "ing_head": "Ingredients: (as per requirement and availability)",
+        "ingredients": ["Grains", "Vitamins", "Molasses", "Rice Polish Fine", "De-Oiled Rice Bran"," Oil seed extracts", "Mineral Mixture", "Grounded Salt", "Broken grains and cereals", "Many other agricultural ingredients"],
+        "heading": "Continuous feeding of Pushti Cattle Feed will also lead to :",
+        "benefits": ["Improvement in Immunity of animal", "Prevention from metabolic diseases and deficiency syndromes", "Regularisation of reproductive cycle and animal coming to heat at regular interval."]
     },
     {
         "id": "1",
         "name": "PUSHTI PRO",
-        "type": "Mash",
+        "type": "Pillet",
         "img": "../assets/pro.png",
-        "pillet_size": "5mm",
-        "pack_size": "20kg",
+        "pillet_size": "6 mm",
+        "pack_size": "50 kg",
         "shelf_life": "45 days from MFD",
-        "description": "Pellentesque elit eget gravida cum sociis natoq.Kerala based Cattle Feed ManufacturersLorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris in aliquam sem fringilla ut morbi tincidunt.",
-        "price": "7000",
-        "weight": "10kg"
+        "para1": "For the better health of cattle and for the improvement in the yield and fat content of milk, good nutrition is essential.From the traditional feeding practices it was observed that animals do not get all the required nutrition for efficient milk production, body maintenance and better reproduction.",
+        "para2": "Therefore, for increased production of milk in dairy cows, high amount of calories, protein, vitamins, minerals etc. should be included in the feed.High amounts of protein is included in Pushthi Pro Cattle feed (Bypass Protein + Fat) .Pushthi Pro is a balanced diet which contain complete nutrients and other essentials like Calcium, Phosphorus, Magnesium, Potassium, Iodine, etc...which are necessary for the cows.",
+        "ing_head": "Ingredients: (as per requirement and availability)",
+        "ingredients": ["Grains", "Vitamins", "Molasses", "Rice Polish Fine", "De-Oiled Rice Bran"," Oil seed extracts", "Mineral Mixture", "Grounded Salt", "Broken grains and cereals", "Many other agricultural ingredients"],
+        "heading": "Continuous feeding of Pushti Pro Cattle Feed will also lead to :",
+        "benefits": ["Improvement in Immunity of animal", "Prevention from metabolic diseases and deficiency syndromes", "Regularisation of reproductive cycle and animal coming to heat at regular interval."]
     },
     {
         "id": "2",
@@ -33,7 +39,11 @@
         "shelf_life": "45 days from MFD",
         "description": "This is a big description of pushti plus product",
         "price": "10000",
-        "weight": "10kg"
+        "weight": "10kg",
+        "ing_head": "Ingredients: (as per requirement and availability)",
+        "ingredients": ["Grains", "Vitamins", "Molasses", "Rice Polish Fine", "De-Oiled Rice Bran"," Oil seed extracts", "Mineral Mixture", "Grounded Salt", "Broken grains and cereals", "Many other agricultural ingredients"],
+        "heading": "Continuous feeding of Pushti Plus Cattle Feed will also lead to :",
+        "benefits": ["Improvement in Immunity of animal", "Prevention from metabolic diseases and deficiency syndromes", "Regularisation of reproductive cycle and animal coming to heat at regular interval."]
     },
     {
         "id": "3",
@@ -41,7 +51,11 @@
         "img": "../assets/product.png",
         "description": "This is a big description of pushti (goat) product",
         "price": "6000",
-        "weight": "10kg"
+        "weight": "10kg",
+        "ing_head": "Ingredients: (as per requirement and availability)",
+        "ingredients": ["Grains", "Vitamins", "Molasses", "Rice Polish Fine", "De-Oiled Rice Bran"," Oil seed extracts", "Mineral Mixture", "Grounded Salt", "Broken grains and cereals", "Many other agricultural ingredients"],
+        "heading": "Continuous feeding of Pushti (goat) Cattle Feed will also lead to :",
+        "benefits": ["Improvement in Immunity of animal", "Prevention from metabolic diseases and deficiency syndromes", "Regularisation of reproductive cycle and animal coming to heat at regular interval."]
     },
     {
         "id": "4",
@@ -49,6 +63,10 @@
         "img": "../assets/product.png",
         "description": "This is a big description of mash product",
         "price": "7000",
-        "weight": "10kg"
+        "weight": "10kg",
+        "ing_head": "Ingredients: (as per requirement and availability)",
+        "ingredients": ["Grains", "Vitamins", "Molasses", "Rice Polish Fine", "De-Oiled Rice Bran"," Oil seed extracts", "Mineral Mixture", "Grounded Salt", "Broken grains and cereals", "Many other agricultural ingredients"],
+        "heading": "Continuous feeding of Layer mash Cattle Feed will also lead to :",
+        "benefits": ["Improvement in Immunity of animal", "Prevention from metabolic diseases and deficiency syndromes", "Regularisation of reproductive cycle and animal coming to heat at regular interval."]
     }
 ]
