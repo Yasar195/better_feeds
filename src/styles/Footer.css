@@ -29,6 +29,10 @@ h2{
     justify-content: space-between;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
 .insta{
     border: 1px solid #FF005C;
@@ -79,6 +83,9 @@ h2{
     width: fit-content;
     padding: 0.3rem;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .media p{
