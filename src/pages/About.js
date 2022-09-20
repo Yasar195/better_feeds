@@ -24,7 +24,7 @@ const About = () => {
 
     useEffect(()=> {
         const interval = setInterval(()=>{
-            setFocus(previous => previous.key === 0 ? jsonArray[1]: jsonArray[0])
+            setFocus(previous => previous.key == 0 ? jsonArray[1]: jsonArray[0])
         }, 5000)
 
         return ()=> clearInterval(interval);
