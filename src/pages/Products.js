@@ -8,10 +8,14 @@ import Pros from "../components/Pros";
 import pro from '../assets/pro.png';
 import plus from '../assets/plus.png';
 import pushti from '../assets/pushti.png';
+import { useLocation } from "react-router-dom";
 
 const Products = () => {
 
     const [content, setContent] = useState({"id": "","name": "","type": "","img": "", "pillet_size":"","pack_size": "","shelf_life": "", "para1": "","para2": "", "price": "", "weight": "", "heading": "", "benefits": [], "ing_head": "", "ingredients": [], "is_table": false})
+
+    const location = useLocation()
+    const { index } = location.state
 
     const imgs = [pushti, pro, plus, product, product]
 
@@ -20,7 +24,7 @@ const Products = () => {
     }
 
     useEffect(()=> {
-        setContent(data[0])
+        setContent(data[index])
     }, [])
 
     return(

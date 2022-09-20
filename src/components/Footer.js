@@ -51,7 +51,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <h2>Careers</h2>
-                    <a href="https://wa.me/919048952682?text=Hi,%20I%20want%20to%20join%20as%20*Distributor*%0AName%20:%20%0ADistrict%20:%20%0A" target="_blank"><p id="data">Join as administrator</p></a>
+                    <a href="https://wa.me/919048952682?text=Hi,%20I%20want%20to%20join%20as%20*Distributor*%0AName%20:%20%0ADistrict%20:%20%0A" target="_blank"><p id="data">Join as Distributor</p></a>
                     <a href="https://wa.me/919048952682?text=Hi" target="_blank">
                         <p id="data">Join as employee</p>
                     </a>

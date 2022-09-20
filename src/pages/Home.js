@@ -25,7 +25,7 @@ const Home = () => {
                 <Links/>
                 <div className='about cont'>
                     <div className='text'>
-                        <h1>Who we are?</h1>
+                        <h1>WHO WE ARE?</h1>
                         <p>
                             Better feeds private limited is one of the leading names in the industry founded in the year 2019, offering the best in class organic animal feeds under the <span id="spe">PUSHTI</span> lineup. The company is committed to produce and sell <span id="spe">good quality compounded cattle feed and feed suppliments</span> to dairy farmers at affordable rates. the company started it's operations at <span id="spe">palakkad</span>, with the manufacturing of pellet form of cattle feed and over the years this has diversified into other feeds, like poulty feed and goat feed
                         </p>
@@ -44,14 +44,14 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='seller cont'>
-                    <h1>Our best sellers</h1>
+                    <h1>OUR BEST SELLERS</h1>
                     <div className='catalog'>
                         <Catalog first={pro} second={plus} third={pushti} link="products/"/>
                     </div>
                 </div>
                 <div className='about cont'>
                     <div className='text'>
-                        <h1>What is so <span id="col">special?</span></h1>
+                        <h1>WHAT IS SO <span id="col">SPECIAL?</span></h1>
                         <p>
                             We strive to produce and distribute good quality compounded cattle feed in pillet form in our automated plant.
                         </p>
@@ -65,7 +65,7 @@ const Home = () => {
                 </div>
                 <div className='gallery cont'>
                     <motion.h1
-                    >Gallery</motion.h1>
+                    >GALLERY</motion.h1>
                     <div className='catalog'>
                         <Catalog first={img1} second={img2} third={img3} link="https://www.google.com"/>
                     </div>

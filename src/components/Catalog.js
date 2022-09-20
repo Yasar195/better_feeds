@@ -13,27 +13,27 @@ const Catalog = (props) => {
     return(
         <div className="cat">
             <div className="images">
-                <motion.div
+                <Link to={'/products'} state={{index: 1}}><motion.div
                     whileHover={{
                         scale: 1.1,
                         cursor: 'pointer'
                     }}
-                ><img src={first} alt='pro'/></motion.div>
-                <motion.div
+                ><img src={first} alt='pro'/></motion.div></Link>
+                <Link to={'/products'} state={{index: 2}}><motion.div
                     whileHover={{
                         scale: 1.1,
                         cursor: 'pointer',
                     }}
-                ><img src={second} alt="plus"/></motion.div>
-                <motion.div
+                ><img src={second} alt="plus"/></motion.div></Link>
+                <Link to={'/products'} state={{index: 0}}><motion.div
                     whileHover={{
                         scale: 1.1,
                         cursor: 'pointer',
                     }}
-                ><img src={third} alt="pushti"/></motion.div>
+                ><img src={third} alt="pushti"/></motion.div></Link>
             </div>
             <div className="view">
-                    <Link to={link} style={{textDecoration: 'none'}}><motion.div
+                    <Link to={link} state={{index: 0}} style={{textDecoration: 'none'}}><motion.div
                         whileHover={{
                             cursor: 'pointer',
                             backgroundColor: 'white',

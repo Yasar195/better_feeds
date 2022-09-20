@@ -65,15 +65,14 @@
 }
 
 .btn{
-    border: 2px solid #00A851;
+    border: 1px solid #00A851;
     width: fit-content;
-    padding: 0.2rem;
-    border-radius: 15px;
+    padding: 0.4rem;
+    border-radius: 30px;
     margin-top: 1.5rem;
 }
 
 .btn p{
-    font-weight: bold;
     color: black;
 }
 

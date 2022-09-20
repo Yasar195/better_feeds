@@ -41,7 +41,7 @@ const Links = () => {
         return(
             <div className="links">
                 <Link to="/" style={{textDecoration: 'none'}}><motion.p variants={variants} whileHover="hover" whileTap="tap">HOME</motion.p></Link>
-                <Link to="/products" style={{textDecoration: 'none'}}><motion.p variants={variants} whileHover="hover" whileTap="tap">PRODUCTS</motion.p></Link>
+                <Link to="/products" state={{index: 0}} style={{textDecoration: 'none'}}><motion.p variants={variants} whileHover="hover" whileTap="tap">PRODUCTS</motion.p></Link>
                 <img src={pushti} alt="logo"/>
                 <Link to="/about" style={{textDecoration: 'none'}}><motion.p variants={variants} whileHover="hover" whileTap="tap">ABOUT</motion.p></Link>
                 <motion.p onClick={handleContact} variants={variants} whileHover="hover" whileTap="tap">CONTACT</motion.p>
