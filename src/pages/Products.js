@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import '../styles/Products.css';
 import logo from '../assets/logo.png';
-import product from '../assets/product.png';
+import poultry from '../assets/poultry.png';
+import goat from '../assets/goat.png';
 import data from './data.json';
 import Footer from '../components/Footer';
 import Pros from "../components/Pros";
@@ -17,7 +18,7 @@ const Products = () => {
     const location = useLocation()
     const { index } = location.state
 
-    const imgs = [pushti, pro, plus, product, product]
+    const imgs = [pushti, pro, plus, goat, poultry]
 
     const changeHandler = (index) => {
         setContent(data[index]);
@@ -35,7 +36,9 @@ const Products = () => {
                 <p>NOTHING BETTER THAN BETTER FEEDS</p>
             </div>
             <div className="product">
-                <Pros handler={changeHandler}/>
+                <div>
+                    <Pros handler={changeHandler}/>
+                </div>
             </div>
             <div className="content">
                 <div className="title">

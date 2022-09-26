@@ -73,8 +73,8 @@ const Pros = (props) => {
                             id="product"
                             onClick={()=>handler(1)}>
                             <img src={pushti} alt="pushti"/>
-                            <p>pushti pro</p>
                         </motion.div>
+                        <p>pushti pro</p>
                     </div>
                     <div>
                         <motion.div 
@@ -84,8 +84,8 @@ const Pros = (props) => {
                             id="product"
                             onClick={()=>handler(2)}>
                             <img src={pushti} alt="pushti"/>
-                            <p>pushti plus</p>
                         </motion.div>
+                        <p>pushti plus</p>
                     </div>
                     <div>
                         <motion.div
@@ -95,8 +95,8 @@ const Pros = (props) => {
                             id="product"
                             onClick={()=>handler(0)}>
                             <img src={pushti} alt="pushti"/>
-                            <p>pushti</p>
                         </motion.div>
+                        <p>pushti</p>
                     </div>
                     <div>
                         <motion.div 
@@ -106,8 +106,8 @@ const Pros = (props) => {
                             id="product"
                             onClick={()=>handler(3)}>
                             <img src={pushti} alt="pushti"/>
-                            <p>pushti goat</p>
                         </motion.div>
+                        <p>pushti goat</p>
                     </div>
                     <div>
                         <motion.div
@@ -117,8 +117,8 @@ const Pros = (props) => {
                             id="product"
                             onClick={()=>handler(4)}>
                             <img src={pushti} alt="pushti"/>
-                            <p>layer mash</p>
                         </motion.div>
+                        <p>layer mash</p>
                     </div>
             </div>
         )
