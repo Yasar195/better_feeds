@@ -3,6 +3,23 @@
     height: 100vh;
 }
 
+.gall{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+#mainimg{
+    width: 8rem;
+}
+
+.gall img{
+    width: 5rem;
+}
+
 .main{
     padding: 1rem;
 }
@@ -78,6 +95,9 @@
 
 .catalog{
     margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 1200px){
@@ -101,9 +121,5 @@
 
     .image img{
         margin-top: 1.5rem;
-    }
-
-    .catalog{
-        height: 20vh;
     }
 }

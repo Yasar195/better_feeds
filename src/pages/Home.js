@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Home.css';
 import Nav from '../components/Nav';
 import right from '../assets/right.png';
@@ -17,6 +17,23 @@ import Links from '../components/Links';
 
 
 const Home = () => {
+
+    const images = [img1, img2, img3]
+    const [image, setImage] = useState(images[0])
+
+    const variants = {
+        hover: {
+            scale: 1.1,
+            cursor: 'pointer'
+        },
+        tap: {
+            scale: 0.9,
+        }
+    }
+
+    const changeImage = (index) => {
+        setImage(images[index])
+    }
 
     return(
         <div className='home'>
@@ -67,7 +84,24 @@ const Home = () => {
                     <motion.h1
                     >GALLERY</motion.h1>
                     <div className='catalog'>
-                        <Catalog first={img1} second={img2} third={img3} link="https://www.google.com"/>
+                        <img id="mainimg" src={image} alt="main"/>
+                        <div className='gall'>
+                            <motion.div
+                                variants={variants}
+                                whileHover="hover"
+                                whileTap="tap"
+                                onClick={()=>changeImage(0)}><img src={img1} alt="img1"/></motion.div>
+                            <motion.div
+                                variants={variants}
+                                whileHover="hover"
+                                whileTap="tap"
+                                onClick={()=>changeImage(1)}><img src={img2} alt="img2"/></motion.div>
+                            <motion.div
+                                variants={variants}
+                                whileHover="hover"
+                                whileTap="tap"
+                                onClick={()=>changeImage(2)}><img src={img3} alt="img3"/></motion.div>
+                        </div>
                     </div>
                 </div>
                 <Footer/>

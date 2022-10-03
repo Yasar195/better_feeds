@@ -58,7 +58,7 @@ td{
 }
 
 .product div{
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -101,9 +101,10 @@ td{
 
 #description{
     width: 50%;
-    border: 2px solid #00A851;
     border-radius: 15px;
     padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 3px 50px rgba(0, 168, 81, 0.3);
 }
 
 #price .details{
