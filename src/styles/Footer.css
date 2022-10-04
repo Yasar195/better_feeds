@@ -51,6 +51,7 @@ a{
 
 #data{
     margin-top: 1rem;
+    width: 70%;
 }
 
 .grid{
@@ -82,7 +83,7 @@ a{
 .media{
     width: fit-content;
     padding: 0.3rem;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;

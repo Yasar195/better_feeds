@@ -3,6 +3,12 @@
     height: 100vh;
 }
 
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .gall{
     width: 100%;
     height: 30%;
@@ -40,12 +46,11 @@
 
 .text h1{
     margin-bottom: 1rem;
-    font-size: 1.5rem;
 }
 
 .cont h1{
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #spe{
@@ -55,7 +60,7 @@
 
 #col{
     color: #00A851;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .image img{
@@ -84,7 +89,7 @@
 .btn{
     border: 1px solid #00A851;
     width: fit-content;
-    padding: 0.4rem;
+    padding: 0.4rem 1rem;
     border-radius: 30px;
     margin-top: 1.5rem;
 }

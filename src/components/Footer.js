@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/Footer.css';
 import logo from '../assets/logo.png';
-import { FaFacebookSquare, FaWhatsappSquare, FaShareAltSquare, FaInstagramSquare } from 'react-icons/fa';
+import { FaFacebookSquare, FaWhatsappSquare, FaShareAltSquare } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
         <footer>
             <div className='div'>
                 <div id="im">
-                    <img src={logo} alt="logo"/>
+                    <img src={logo} alt="logo"/> 
                 </div>
                 <div className='social'>
                     <h2>Contact</h2>
@@ -17,10 +17,6 @@ const Footer = () => {
                         <div className='media mail'>
                             <SiGmail color="#FF5D5D" size={'15px'}/>
                             <p>MAIL</p>
-                        </div>
-                        <div className='media insta'>
-                            <FaInstagramSquare color="#FF005C" size={'15px'}/>
-                            <p>INSTAGRAM</p>
                         </div>
                         <a target="_blank" href="https://www.facebook.com/BetterFeedsPage"><div className='media fb'>
                             <FaFacebookSquare color="#6184FF" size={'15px'}/>

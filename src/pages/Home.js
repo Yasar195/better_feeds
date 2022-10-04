@@ -39,7 +39,9 @@ const Home = () => {
         <div className='home'>
             <Nav/>
             <div className='main'>
-                <Links/>
+                <div className='link'>
+                    <Links/>
+                </div>
                 <div className='about cont'>
                     <div className='text'>
                         <h1>WHO WE ARE?</h1>
@@ -75,6 +77,15 @@ const Home = () => {
                         <p>
                             To obtain the quality we need, we plan and implement strict quality control management and continual improvement by use of good quality raw materials, strict manufacturing process, and by ensuring hygienic conditions to ensure our customer's satisfaction. The management and staff are determined and committed to make no compromise in the quality of the feed and balance cattle feed at the lowest price possible to the satisfaction of the customer.
                         </p>
+                        <Link to="about/" style={{textDecoration: 'none'}}><motion.div 
+                            whileHover={{
+                                scale: 1.1,
+                                cursor: 'pointer',
+                            }}
+                            whileTap={{
+                                scale: 0.9,
+                            }}
+                            className="btn"><p>Learn  more</p></motion.div></Link>
                     </div>
                     <div className='image'>
                         <img src={organic} alt="organic"/>
