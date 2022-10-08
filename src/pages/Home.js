@@ -24,7 +24,8 @@ const Home = () => {
     const variants = {
         hover: {
             scale: 1.1,
-            cursor: 'pointer'
+            cursor: 'pointer',
+            boxShadow: '0px 0px 20px #00A851'
         },
         tap: {
             scale: 0.9,

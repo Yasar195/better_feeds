@@ -58,13 +58,15 @@ const Pros = (props) => {
     if(width>=800){
         return(
             <div className="pros">
-                <Link to="/"><motion.div
+                <div>
+                    <Link to="/"><motion.div
                         whileHover="btnhover"
                         whileTap="tap"
                         variants={variants}
                         className="homebtn">
                         <AiFillHome/>
                     </motion.div></Link>
+                </div>
                     <div>
                         <motion.div
                             variants={variants}
